@@ -1,0 +1,16 @@
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\BL.dll
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\BL.pdb
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\BL_Interface.dll
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\DAO.dll
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\DAO_Interface.dll
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\ProjectEntities.dll
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\DAO_Interface.pdb
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\BL_Interface.pdb
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\DAO.pdb
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\DAO.dll.config
+C:\Users\shuro\source\repos\3lvlWare\BL\bin\Debug\ProjectEntities.pdb
+C:\Users\shuro\source\repos\3lvlWare\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\shuro\source\repos\3lvlWare\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\shuro\source\repos\3lvlWare\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\shuro\source\repos\3lvlWare\BL\obj\Debug\BL.dll
+C:\Users\shuro\source\repos\3lvlWare\BL\obj\Debug\BL.pdb

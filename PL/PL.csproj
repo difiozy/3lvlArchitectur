@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75DFCEBF-B3B1-4DCB-8B36-00ED92C31BEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PL</RootNamespace>
+    <AssemblyName>PL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewProductForm.Designer.cs">
+      <DependentUpon>AddNewProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProductById.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProductById.Designer.cs">
+      <DependentUpon>DeleteProductById.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDateComeSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDateComeSearch.Designer.cs">
+      <DependentUpon>FormDateComeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDateOutSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDateOutSearch.Designer.cs">
+      <DependentUpon>FormDateOutSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDateShelfLifeSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDateShelfLifeSearch.Designer.cs">
+      <DependentUpon>FormDateShelfLifeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDateUtilizationSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDateUtilizationSearch.Designer.cs">
+      <DependentUpon>FormDateUtilizationSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchByProductName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchByProductName.Designer.cs">
+      <DependentUpon>FormSearchByProductName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewProductForm.resx">
+      <DependentUpon>AddNewProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProductById.resx">
+      <DependentUpon>DeleteProductById.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDateComeSearch.resx">
+      <DependentUpon>FormDateComeSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDateOutSearch.resx">
+      <DependentUpon>FormDateOutSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDateShelfLifeSearch.resx">
+      <DependentUpon>FormDateShelfLifeSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDateUtilizationSearch.resx">
+      <DependentUpon>FormDateUtilizationSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchByProductName.resx">
+      <DependentUpon>FormSearchByProductName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{71ea1958-f6bd-479a-9d2f-d33d2b006da8}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL_Interface\BL_Interface.csproj">
+      <Project>{27a8dcfc-d321-4e1b-8b44-812385dc710d}</Project>
+      <Name>BL_Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectEntities\ProjectEntities.csproj">
+      <Project>{5d28283c-e8ab-4f7c-a021-a63d566a9a06}</Project>
+      <Name>ProjectEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

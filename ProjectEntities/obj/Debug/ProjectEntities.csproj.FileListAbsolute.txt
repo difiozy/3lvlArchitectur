@@ -1,0 +1,6 @@
+C:\Users\shuro\source\repos\3lvlWare\ProjectEntities\bin\Debug\ProjectEntities.dll
+C:\Users\shuro\source\repos\3lvlWare\ProjectEntities\bin\Debug\ProjectEntities.pdb
+C:\Users\shuro\source\repos\3lvlWare\ProjectEntities\obj\Debug\ProjectEntities.csprojAssemblyReference.cache
+C:\Users\shuro\source\repos\3lvlWare\ProjectEntities\obj\Debug\ProjectEntities.csproj.CoreCompileInputs.cache
+C:\Users\shuro\source\repos\3lvlWare\ProjectEntities\obj\Debug\ProjectEntities.dll
+C:\Users\shuro\source\repos\3lvlWare\ProjectEntities\obj\Debug\ProjectEntities.pdb

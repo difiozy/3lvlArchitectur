@@ -1,0 +1,12 @@
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\DAO.dll.config
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\DAO.dll
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\DAO.pdb
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\DAO_Interface.dll
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\ProjectEntities.dll
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\DAO_Interface.pdb
+C:\Users\shuro\source\repos\3lvlWare\DAO\bin\Debug\ProjectEntities.pdb
+C:\Users\shuro\source\repos\3lvlWare\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\shuro\source\repos\3lvlWare\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\shuro\source\repos\3lvlWare\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\shuro\source\repos\3lvlWare\DAO\obj\Debug\DAO.dll
+C:\Users\shuro\source\repos\3lvlWare\DAO\obj\Debug\DAO.pdb
