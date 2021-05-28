@@ -15,13 +15,13 @@ namespace PL
     public partial class DeleteProductById : Form
     {
         private IProductBl _productBl = new Product_BL();
-        private List<Product> _allItems;
+        private List<Product> _allProduct;
         private List<int> _allIDs = new List<int>();
         public DeleteProductById()
         {
-            _allItems = new List<Product>(_productBl.GetAllProduct());
+            _allProduct = new List<Product>(_productBl.GetAllProduct());
             InitializeComponent();
-            foreach (var item in _allItems)
+            foreach (var item in _allProduct)
             {
                 if (!_allIDs.Contains(item.Id))
                 {
@@ -32,15 +32,15 @@ namespace PL
 
         private void delet_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(IdtoDelete.Text);
+            int id = int.Parse(Delid.Text);
             if (!_allIDs.Contains(id))
             {
                 errorProvider1.SetError(delet, "Товара с таким ID не существует");
                 return;
             }
-            _productBl.DeleteProduct(id);
+            else
+                _productBl.DeleteProduct(id);
             this.Close();
         }
-
     }
 }

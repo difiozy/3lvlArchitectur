@@ -15,45 +15,35 @@ namespace PL
     public partial class FormSearchByProductName : Form
     {
         private IProductBl _productBl = new Product_BL();
-        private List<Product> _allItems;
+        private List<Product> _allProduct;
         public FormSearchByProductName()
         {
-            _allItems = new List<Product>(_productBl.GetAllProduct());
+            _allProduct = new List<Product>(_productBl.GetAllProduct());
             InitializeComponent();
-            RenderDataGridView(DataTable, _allItems);
+            RenderDataGridView(DataTable, _allProduct);
         }
         private void RenderDataGridView(DataGridView dataTable, List<Product> items)
         {
             dataTable.Rows.Clear();
-            foreach (var item in items)
+            foreach (var el in items)
             {
-                DataGridViewRow row = (DataGridViewRow)dataTable.Rows[0].Clone();
-                row.Cells[0].Value = item.Id;
-                row.Cells[1].Value = item.ProductName;
-                if (item.DateCome != null)
-                    row.Cells[2].Value = ((DateTime)item.DateCome).ToShortDateString();
-                if (item.DateOut != null)
-                    row.Cells[3].Value = ((DateTime)item.DateOut).ToShortDateString();
-                if (item.ShelfLife != null)
-                    row.Cells[4].Value = ((DateTime)item.ShelfLife).ToShortDateString();
-                if (item.DateUtilization != null)
-                    row.Cells[5].Value = ((DateTime)item.DateUtilization).ToShortDateString();
-                dataTable.Rows.Add(row);
+                DataTable.Rows.Add(el.Id, el.ProductName,
+                    (el.DateCome == null) ? " " : ((DateTime)el.DateCome).ToShortDateString(),
+                    (el.DateOut == null) ? " " : ((DateTime)el.DateOut).ToShortDateString(),
+                    (el.ShelfLife == null) ? " " : ((DateTime)el.ShelfLife).ToShortDateString(),
+                    (el.DateUtilization == null) ? " " : ((DateTime)el.DateUtilization).ToShortDateString());
+
             }
         }
 
-        
         private void button1_Click(object sender, EventArgs e)
         {
+            List<Product> tmp = _allProduct;
             if (textBox1.Text.Length == 0)
             {
-                RenderDataGridView(DataTable, _allItems);
+                tmp = (List<Product>)(_productBl.SearchByProductName(textBox1.Text));
             }
-            else
-            {
-                List<Product> searchResult = new List<Product>(_productBl.SearchByProductName(textBox1.Text));
-                RenderDataGridView(DataTable, searchResult);
-            }
+            RenderDataGridView(DataTable, tmp);
         }
     }
 }

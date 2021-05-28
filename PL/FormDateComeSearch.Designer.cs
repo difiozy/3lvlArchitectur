@@ -44,7 +44,7 @@ namespace PL
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(181, 30);
+            this.button1.Location = new System.Drawing.Point(12, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 30);
             this.button1.TabIndex = 7;
@@ -58,12 +58,13 @@ namespace PL
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 22);
+            this.label1.Size = new System.Drawing.Size(100, 22);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Enter date";
+            this.label1.Text = "Select date";
             // 
             // DataTable
             // 
+            this.DataTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.DataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -74,11 +75,10 @@ namespace PL
             this.Column4,
             this.Column5,
             this.Column6});
-            this.DataTable.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DataTable.Location = new System.Drawing.Point(0, 88);
+            this.DataTable.Location = new System.Drawing.Point(180, 12);
             this.DataTable.Name = "DataTable";
             this.DataTable.RowHeadersWidth = 51;
-            this.DataTable.Size = new System.Drawing.Size(800, 362);
+            this.DataTable.Size = new System.Drawing.Size(501, 438);
             this.DataTable.TabIndex = 6;
             // 
             // Column1
@@ -129,13 +129,13 @@ namespace PL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(693, 469);
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DataTable);
             this.Name = "FormDateComeSearch";
-            this.Text = "Form1";
+            this.Text = "DateComeSearch";
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

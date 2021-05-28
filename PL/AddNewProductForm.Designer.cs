@@ -160,7 +160,7 @@ namespace PL
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(131, 310);
+            this.button1.Location = new System.Drawing.Point(24, 279);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 40);
             this.button1.TabIndex = 14;
@@ -172,7 +172,7 @@ namespace PL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 398);
+            this.ClientSize = new System.Drawing.Size(313, 339);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nname);

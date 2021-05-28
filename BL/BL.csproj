@@ -45,10 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DAO_Interface\DAO_Interface.csproj">
-      <Project>{046f6a23-fbfe-44de-89b6-9fb669eee211}</Project>
-      <Name>DAO_Interface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BL_Interface\BL_Interface.csproj">
       <Project>{27a8dcfc-d321-4e1b-8b44-812385dc710d}</Project>
       <Name>BL_Interface</Name>
@@ -56,6 +52,10 @@
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{a7e9c416-2a29-49d5-90a8-9b0b5a89b8fa}</Project>
       <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO_Interface\DAO_Interface.csproj">
+      <Project>{046f6a23-fbfe-44de-89b6-9fb669eee211}</Project>
+      <Name>DAO_Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\ProjectEntities\ProjectEntities.csproj">
       <Project>{5d28283c-e8ab-4f7c-a021-a63d566a9a06}</Project>

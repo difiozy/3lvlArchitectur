@@ -31,7 +31,7 @@ namespace PL
         {
             this.components = new System.ComponentModel.Container();
             this.delet = new System.Windows.Forms.Button();
-            this.IdtoDelete = new System.Windows.Forms.TextBox();
+            this.Delid = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -39,7 +39,7 @@ namespace PL
             // 
             // delet
             // 
-            this.delet.Location = new System.Drawing.Point(93, 100);
+            this.delet.Location = new System.Drawing.Point(30, 80);
             this.delet.Name = "delet";
             this.delet.Size = new System.Drawing.Size(75, 23);
             this.delet.TabIndex = 0;
@@ -47,12 +47,12 @@ namespace PL
             this.delet.UseVisualStyleBackColor = true;
             this.delet.Click += new System.EventHandler(this.delet_Click);
             // 
-            // IdtoDelete
+            // Delid
             // 
-            this.IdtoDelete.Location = new System.Drawing.Point(93, 74);
-            this.IdtoDelete.Name = "IdtoDelete";
-            this.IdtoDelete.Size = new System.Drawing.Size(75, 20);
-            this.IdtoDelete.TabIndex = 0;
+            this.Delid.Location = new System.Drawing.Point(30, 54);
+            this.Delid.Name = "Delid";
+            this.Delid.Size = new System.Drawing.Size(75, 20);
+            this.Delid.TabIndex = 0;
             // 
             // errorProvider1
             // 
@@ -61,17 +61,18 @@ namespace PL
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 58);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(30, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(75, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter Id";
             // 
             // DeleteProductById
             // 
-            this.ClientSize = new System.Drawing.Size(274, 155);
+            this.ClientSize = new System.Drawing.Size(152, 157);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.IdtoDelete);
+            this.Controls.Add(this.Delid);
             this.Controls.Add(this.delet);
             this.Name = "DeleteProductById";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -83,7 +84,7 @@ namespace PL
         #endregion
 
         private System.Windows.Forms.Button delet;
-        private System.Windows.Forms.TextBox IdtoDelete;
+        private System.Windows.Forms.TextBox Delid;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label1;
     }

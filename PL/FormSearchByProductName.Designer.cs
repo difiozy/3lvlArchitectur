@@ -45,7 +45,7 @@ namespace PL
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(120, 12);
+            this.textBox1.Location = new System.Drawing.Point(16, 34);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 0;
@@ -62,6 +62,7 @@ namespace PL
             // 
             // DataTable
             // 
+            this.DataTable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.DataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -72,11 +73,10 @@ namespace PL
             this.Column4,
             this.Column5,
             this.Column6});
-            this.DataTable.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DataTable.Location = new System.Drawing.Point(0, 47);
+            this.DataTable.Location = new System.Drawing.Point(132, 8);
             this.DataTable.Name = "DataTable";
             this.DataTable.RowHeadersWidth = 51;
-            this.DataTable.Size = new System.Drawing.Size(700, 362);
+            this.DataTable.Size = new System.Drawing.Size(646, 438);
             this.DataTable.TabIndex = 2;
             // 
             // Column1
@@ -117,7 +117,7 @@ namespace PL
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(226, 9);
+            this.button1.Location = new System.Drawing.Point(16, 63);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 30);
             this.button1.TabIndex = 3;
@@ -129,7 +129,7 @@ namespace PL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 409);
+            this.ClientSize = new System.Drawing.Size(790, 458);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);

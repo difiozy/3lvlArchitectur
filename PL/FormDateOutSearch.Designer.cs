@@ -44,7 +44,7 @@ namespace PL
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(181, 28);
+            this.button1.Location = new System.Drawing.Point(12, 64);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 30);
             this.button1.TabIndex = 11;
@@ -64,6 +64,7 @@ namespace PL
             // 
             // DataTable
             // 
+            this.DataTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.DataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -74,11 +75,10 @@ namespace PL
             this.Column4,
             this.Column5,
             this.Column6});
-            this.DataTable.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DataTable.Location = new System.Drawing.Point(0, 88);
+            this.DataTable.Location = new System.Drawing.Point(161, 12);
             this.DataTable.Name = "DataTable";
             this.DataTable.RowHeadersWidth = 51;
-            this.DataTable.Size = new System.Drawing.Size(800, 362);
+            this.DataTable.Size = new System.Drawing.Size(607, 420);
             this.DataTable.TabIndex = 10;
             // 
             // Column1
@@ -129,7 +129,7 @@ namespace PL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(780, 452);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DataTable);

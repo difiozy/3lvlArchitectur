@@ -45,10 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DAO_Interface\DAO_Interface.csproj">
-      <Project>{046f6a23-fbfe-44de-89b6-9fb669eee211}</Project>
-      <Name>DAO_Interface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{a7e9c416-2a29-49d5-90a8-9b0b5a89b8fa}</Project>
       <Name>DAO</Name>

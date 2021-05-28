@@ -12,3 +12,17 @@ C:\Users\shuro\source\repos\3lvlWare\BL_Interface\obj\Debug\BL_Interface.csproj.
 C:\Users\shuro\source\repos\3lvlWare\BL_Interface\obj\Debug\BL_Interface.csproj.CopyComplete
 C:\Users\shuro\source\repos\3lvlWare\BL_Interface\obj\Debug\BL_Interface.dll
 C:\Users\shuro\source\repos\3lvlWare\BL_Interface\obj\Debug\BL_Interface.pdb
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\BL_Interface.dll
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\BL_Interface.pdb
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\DAO.dll
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\ProjectEntities.dll
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\DAO_Interface.dll
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\DAO.pdb
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\DAO.dll.config
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\ProjectEntities.pdb
+C:\Users\shuro\source\repos\gitRep\BL_Interface\bin\Debug\DAO_Interface.pdb
+C:\Users\shuro\source\repos\gitRep\BL_Interface\obj\Debug\BL_Interface.csprojAssemblyReference.cache
+C:\Users\shuro\source\repos\gitRep\BL_Interface\obj\Debug\BL_Interface.csproj.CoreCompileInputs.cache
+C:\Users\shuro\source\repos\gitRep\BL_Interface\obj\Debug\BL_Interface.csproj.CopyComplete
+C:\Users\shuro\source\repos\gitRep\BL_Interface\obj\Debug\BL_Interface.dll
+C:\Users\shuro\source\repos\gitRep\BL_Interface\obj\Debug\BL_Interface.pdb

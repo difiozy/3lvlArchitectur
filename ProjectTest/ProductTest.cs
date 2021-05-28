@@ -9,13 +9,12 @@ namespace ProjectTests
     [TestClass]
     public class ProductTest
     {
-        private IProductBl _productBl = new Product_BL();
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Name is incorrect.")]
+        [ExpectedException(typeof(Exception), "Incorrect Name")]
         public void CheckProductName()
         {
-            string name = "Cheese";
+            string name = "1212Cheese";
             DateTime? d_come = new DateTime(year: 2021, month: 5, day: 7);
             DateTime? d_out = new DateTime(year: 2021, month: 6, day: 7);
             DateTime? s_life = new DateTime(year: 2021, month: 8, day: 6);
@@ -27,20 +26,16 @@ namespace ProjectTests
                 s_l: s_life,
                 d_u: d_utilization
             );
-            _productBl.AddNewProduct(item);
-
-            item.ProductName = "328Cheese";
-            _productBl.AddNewProduct(item);
         }
 
         
         [TestMethod]
-        [ExpectedException(typeof(Exception), "DateCome erlier then DateOut.")]
+        [ExpectedException(typeof(Exception), "Date come later then date out")]
         public void CheckProductSaleDates()
         {
             string name = "Cheese";
-            DateTime? d_come = new DateTime(year: 2021, month: 5, day: 7);
-            DateTime? d_out = new DateTime(year: 2021, month: 6, day: 7);
+            DateTime? d_out = new DateTime(year: 2021, month: 5, day: 7);
+            DateTime? d_come = new DateTime(year: 2021, month: 6, day: 7);
             DateTime? s_life = new DateTime(year: 2021, month: 8, day: 6);
             DateTime? d_utilization = new DateTime(year: 2021, month: 8, day: 7);
             var item = new Product(
@@ -50,10 +45,6 @@ namespace ProjectTests
                 s_l: s_life,
                 d_u: d_utilization
             );
-            _productBl.AddNewProduct(item);
-            item.DateCome = d_out;
-            item.DateOut = d_come;
-            _productBl.AddNewProduct(item);
         }
     }
 }

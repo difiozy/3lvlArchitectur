@@ -8,13 +8,17 @@ namespace ProjectEntities
 {
     public class Product
     {
-        private static int maxId = 0;
-        public int Id { set; get; }
+        private static int _maxId = 0;
+        public int Id;
         private string _name;
         private DateTime? _shelf_life;//срок годности (годен до)
         private DateTime? _date_come;//дата поступления
         private DateTime? _date_util;//дата утилизации
         private DateTime? _date_out;//дата отгрузки
+
+        private const string _errorSymbol = "1234567890'~`!@#$%^&*()_+=?:%;№\\//{}[]";       
+
+           
 
         public Product()
         {
@@ -27,27 +31,45 @@ namespace ProjectEntities
         }
         public Product(int id, string name, DateTime? s_l, DateTime? d_c, DateTime? d_u, DateTime? d_o)
         {
-            Id = (id);
+            if (((DateTime)d_c).CompareTo((DateTime)d_o) == 1)
+                throw new Exception("Date come later then date out");
+            for (int i = 0; i < _errorSymbol.Length; i++)
+                if (name.Contains(_errorSymbol[i]))
+                    throw new Exception("Incorrect Name");
+            if (id < 0) throw new Exception("Incorrect Id");
+
+            Id = id;
             _name = (name);
             _shelf_life = (s_l);
             _date_come = (d_c);
             _date_util = (d_u);
             _date_out = (d_o);
-            maxId = Math.Max(maxId, id);
         }
         public Product(int id, string name, DateTime? s_l, DateTime? d_c, DateTime? d_o)
         {
+            if (((DateTime)d_c).CompareTo((DateTime)d_o) == 1)
+                throw new Exception("Date come later then date out");
+            for (int i = 0; i < _errorSymbol.Length; i++)
+                if (name.Contains(_errorSymbol[i]))
+                    throw new Exception("Incorrect Name");
+            if (id < 0) throw new Exception("Incorrect Id");
+
             Id = (id);
             _name = (name);
             _shelf_life = (s_l);
             _date_come = (d_c);
             _date_out = (d_o);
             SetDateUtil();
-            maxId = Math.Max(maxId, id);
         }
         public Product( string name, DateTime? s_l, DateTime? d_c, DateTime? d_u, DateTime? d_o)
         {
-            Id = (maxId++);
+           if( ((DateTime)d_c).CompareTo((DateTime)d_o) == 1)
+                throw new Exception("Date come later then date out");
+            for (int i = 0; i < _errorSymbol.Length; i++)
+                if (name.Contains(_errorSymbol[i]))
+                    throw new Exception("Incorrect Name");
+
+            Id = _maxId++;
             _name = (name);
             _shelf_life = (s_l);
             _date_come = (d_c);
