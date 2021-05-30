@@ -39,7 +39,7 @@ namespace PL
         private void button1_Click(object sender, EventArgs e)
         {
             List<Product> tmp = _allProduct;
-            if (textBox1.Text.Length == 0)
+            if (textBox1.Text.Length != 0)
             {
                 tmp = (List<Product>)(_productBl.SearchByProductName(textBox1.Text));
             }

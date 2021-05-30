@@ -53,7 +53,7 @@ namespace PL
         {
             
             List<Product> tmp = _allProduct;
-            if (datePicker.Text.Length == 0)
+            if (datePicker.Text.Length != 0)
             {
                 tmp = (List<Product>)(_productBl.SearchByDateUtilization(Convert.ToDateTime(datePicker.Value.ToShortDateString())));
             }

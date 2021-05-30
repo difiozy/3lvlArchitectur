@@ -41,7 +41,7 @@ namespace PL
         private void button1_Click(object sender, EventArgs e)
         {
             List<Product> tmp = _allProduct;
-            if (datePicker.Text.Length == 0)
+            if (datePicker.Text.Length != 0)
             {
                 tmp = (List<Product>)(_productBl.SearchByDateOut(Convert.ToDateTime(datePicker.Value.ToShortDateString())));
             }
